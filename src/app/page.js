@@ -11,7 +11,7 @@ export default function Home() {
           className={'pb-[15px] font-semibold text-[1.875rem]  sm:text-[2.75rem] text-(--secondary) leading-[100%] tracking-normal text-center'}>Welcome
           back!</h2>
         <p
-          className={'text-white px-[37.5px] pb-[34px] text-[16px] sm:text-[18px] leading-[100%] tracking-normal text-center'}>
+          className={'font-medium text-white px-[37.5px] pb-[34px] text-[16px] sm:text-[18px] leading-[140%] tracking-normal text-center'}>
           Join a Global Movement to Rebuild the Greatest Library in Human History
         </p>
         <div
@@ -72,7 +72,7 @@ export default function Home() {
             </button>
           </div>
           <h6 className={'text-center pt-[22px] font-medium leading-[100%] tracking-normal text-[14px] sm:text-[17px]'}>
-            Don&apos;t Have an account?
+            Don&apos;t Have an account?{' '}
             <a href={'/signup'} className={'text-(--primary) font-bold text-[14px] sm:text-[18px]'}>
               Sign up
             </a>
