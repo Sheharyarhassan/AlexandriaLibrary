@@ -162,7 +162,7 @@ const Page = () => {
                 the
                 Library of Alexandria</p>
             </h6>
-            <div className={'w-full h-full flex justify-end items-end'}>
+            <div className={'w-full h-full flex justify-end items-end mt-[11px]'}>
               <img className={'max-w-full h-auto'} src={'/assets/Payment/Group 57514.png'}
                    alt={'Avatar'}/>
             </div>
