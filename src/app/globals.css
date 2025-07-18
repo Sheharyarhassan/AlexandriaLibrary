@@ -1,26 +1,115 @@
 @import "tailwindcss";
 
+@font-face {
+    font-family: 'DM Sans';
+    src: url('/fonts/DM_Sans/DMSans-VariableFont_opsz,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins/Poppins-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins/Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins/Poppins-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --background: #ffffff;
+    --foreground: #171717;
+    --primary: #00144F;
+    --secondary: #EAC87E;
+    --secondary-200: #FBF2E0;
+    --secondary-800: #AA935A;
+    --inter: "Inter", sans-serif;
+    --poppins: "Poppins", sans-serif;
+    --dmsans: 'DM Sans', sans-serif;
+    --light: #D9D9D9;
+    --muted: #999999;
+    --danger: #BC0000;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+    :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+    }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--poppins);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, button {
+    font-family: var(--inter);
+}
+
+
+@media only screen and (min-width: 768px) {
+    .background-gradient {
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(224, 222, 247, 0) 83.31%, rgba(255, 255, 255, 0.95) 100%);
+    }
+}
+
+@media only screen and (max-width: 439px) {
+    .flexbutton {
+        flex-direction: column !important;
+    }
+
+    .padding-x {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+
+    }
+
+    .margin-center {
+        margin: 7px auto !important;
+    }
 }
